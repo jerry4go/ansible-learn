@@ -28,11 +28,11 @@ ping命令
 
 目录拷贝
 
-`ansible all -m copy -a 'src=/root/nginx dest=/tmp/ mode=755 owner=root'
+`ansible all -m copy -a 'src=/root/nginx dest=/tmp/ mode=755 owner=root'`
 
 yum安装
 
-·ansible all -m yum -a "name=ntpdate,telnet state=installed"·
+`ansible all -m yum -a "name=ntpdate,telnet state=installed"`
 
 
 
