@@ -16,9 +16,45 @@
 
 ping命令
 
-ansible all -a 'ping baidu.com -c 1'
+`ansible all -a 'ping baidu.com -c 1'`
 
 正则表达式
 
-ansible 192.168.33.*  -m command -a "df -h"
+`ansible 192.168.33.*  -m command -a "df -h"`
+
+文件拷贝
+
+`ansible all -m copy -a 'src=/etc/passwd dest=/tmp/ mode=755 owner=root'`
+
+目录拷贝
+
+`ansible all -m copy -a 'src=/root/nginx dest=/tmp/ mode=755 owner=root'
+
+yum安装
+
+·ansible all -m yum -a "name=ntpdate,telnet state=installed"·
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
