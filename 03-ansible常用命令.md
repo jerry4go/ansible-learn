@@ -12,3 +12,13 @@
 
 -a           指定模块的参数，可以是命令等
 
+# 基本命令
+
+ping命令
+
+ansible all -a 'ping baidu.com -c 1'
+
+正则表达式
+
+ansible 192.168.33.*  -m command -a "df -h"
+
